@@ -43,9 +43,9 @@ namespace Inlämning_D15_Grundämnen
                 smältpunkt = 1337.33,
                 kokpunkt = 3243,
             };
-            syre.print();
+            /*syre.print();
             järn.print();
-            guld.print();
+            guld.print();*/
             Grundämne[] grundämnen = new Grundämne[6];
             grundämnen[0] = syre;
             grundämnen[1] = järn;
@@ -74,9 +74,11 @@ namespace Inlämning_D15_Grundämnen
                 smältpunkt = 234.3210,
                 kokpunkt = 629.88,
             };
-            foreach (Grundämne grundämne in grundämnen) { grundämne.print(); }
+            foreach (Grundämne grundämne in grundämnen)  grundämne.print(); 
+            Console.WriteLine("Metaller:");
+            foreach(Grundämne grundämne in grundämnen)
             {
-                
+                if (grundämne.typ == "metall") Console.WriteLine($"  {grundämne.namn}"); 
             }
         }
     }
