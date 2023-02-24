@@ -74,6 +74,10 @@ namespace Inlämning_D15_Grundämnen
                 smältpunkt = 234.3210,
                 kokpunkt = 629.88,
             };
+            foreach (Grundämne grundämne in grundämnen) { grundämne.print(); }
+            {
+                
+            }
         }
     }
 }
