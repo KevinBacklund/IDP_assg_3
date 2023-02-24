@@ -46,6 +46,34 @@ namespace Inlämning_D15_Grundämnen
             syre.print();
             järn.print();
             guld.print();
+            Grundämne[] grundämnen = new Grundämne[6];
+            grundämnen[0] = syre;
+            grundämnen[1] = järn;
+            grundämnen[2] = guld;
+            grundämnen[3] = new Grundämne()
+            {
+                namn = "Väte",
+                atomnummer = 1,
+                typ = "ickemetall",
+                smältpunkt = 13.99,
+                kokpunkt = 20.271,
+            };
+            grundämnen[4] = new Grundämne()
+            {
+                namn = "Brom",
+                atomnummer = 35,
+                typ = "ickemetall",
+                smältpunkt = 265.8,
+                kokpunkt = 332.0,
+            };
+            grundämnen[5] = new Grundämne()
+            {
+                namn = "Kvicksilver",
+                atomnummer = 80,
+                typ = "metall",
+                smältpunkt = 234.3210,
+                kokpunkt = 629.88,
+            };
         }
     }
 }
