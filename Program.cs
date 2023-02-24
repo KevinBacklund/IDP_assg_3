@@ -11,6 +11,11 @@ namespace Inlämning_D15_Grundämnen
             public string typ = "";
             public double smältpunkt = 0;
             public double kokpunkt = 0;
+            public void print()
+            {
+                Console.WriteLine($"Grundämne: {namn}\n typ: {typ}\n " +
+                    $"smältpunkt: {smältpunkt}\n kokpunkt: {kokpunkt}\n");
+            }
         }
         static void Main(string[] args)
         {
@@ -38,6 +43,9 @@ namespace Inlämning_D15_Grundämnen
                 smältpunkt = 1337.33,
                 kokpunkt = 3243,
             };
+            syre.print();
+            järn.print();
+            guld.print();
         }
     }
 }
