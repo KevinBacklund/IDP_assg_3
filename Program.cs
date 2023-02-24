@@ -76,10 +76,11 @@ namespace Inlämning_D15_Grundämnen
             };
             foreach (Grundämne grundämne in grundämnen)  grundämne.print(); 
             Console.WriteLine("Metaller:");
-            foreach(Grundämne grundämne in grundämnen)
-            {
-                if (grundämne.typ == "metall") Console.WriteLine($"  {grundämne.namn}"); 
-            }
+            foreach (Grundämne grundämne in grundämnen)
+                if (grundämne.typ == "metall") Console.WriteLine($"  {grundämne.namn}");
+            Console.WriteLine("\nGrundämnen som har en smältpunkt under 273.16K och en kokpunkt över 273.16k:");
+            foreach (Grundämne grundämne in grundämnen)
+                if (grundämne.smältpunkt < 273.16 && grundämne.kokpunkt > 273.16) Console.WriteLine($"  {grundämne.namn}");
         }
     }
 }
